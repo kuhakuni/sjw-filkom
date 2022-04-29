@@ -11,7 +11,7 @@ const Navbar = () => {
 		el.classList.toggle("bi-x");
 	};
 	const headerScrolled = () => {
-		const header = document.querySelector("#header");
+	const header = document.querySelector("#header");
 		if (window.scrollY > 20) {
 			header.classList.add("header-scrolled");
 		} else {
@@ -26,7 +26,7 @@ const Navbar = () => {
 			id="header"
 		>
 			<div className="container flex justify-between items-center">
-				<Link to="/" className="text-2xl text-primary font-bold">
+				<Link to="./" className="text-2xl text-primary font-bold">
 					SJW FILKOM
 				</Link>
 				<nav className="navbar" id="nav-menu">
