@@ -19,6 +19,9 @@ module.exports = {
 					lg: "4rem",
 				},
 			},
+			boxShadow: {
+				layanan: "0px 12px 10px rgba(0, 0, 0, 0.25)",
+			},
 		},
 	},
 	plugins: [],
