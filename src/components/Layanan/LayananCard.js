@@ -1,5 +1,5 @@
 import React from "react";
-const LayananCard = ({ title, content, button }) => {
+const LayananCard = ({ title, content, button, link }) => {
 	return (
 		<>
 			<div className="flex flex-col gap-2 justify-center">
@@ -9,9 +9,12 @@ const LayananCard = ({ title, content, button }) => {
 				<div className="grow flex flex-col p-8 text-2xl text-center text-white bg-tertiary">
 					<p className="font-normal">{content}</p>
 					{button && (
-						<button className="grow mt-8 py-2 font-semibold bg-opacity-20 bg-white border-2 rounded shadow-layanan">
+						<a
+							href={link}
+							className="cursor-pointer grow mt-8 py-2 font-semibold bg-opacity-20 bg-white border-2 rounded shadow-layanan"
+						>
 							{button}
-						</button>
+						</a>
 					)}
 				</div>
 			</div>
