@@ -4,6 +4,7 @@ import Hero from "./Hero/Hero";
 import Layanan from "./Layanan/Layanan";
 import Artikel from "./Artikel/Artikel";
 import Important from "./Important/Important";
+import Footer from "./Footer/Footer";
 const Home = () => {
 	useEffect(() => {
 		document.title = "SJW FILKOM | Saling Jaga Warga FILKOM";
@@ -15,6 +16,7 @@ const Home = () => {
 			<Artikel />
 			<Layanan />
 			<Important />
+			<Footer />
 		</>
 	);
 };
