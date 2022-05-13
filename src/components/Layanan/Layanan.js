@@ -4,7 +4,7 @@ import LayananCard from "./LayananCard";
 const Layanan = () => {
 	return (
 		<>
-			<div className={`${styles.container} min-h-screen`} id="layanan">
+			<div className={`${styles.container} min-h-screen`}  id="layanan">
 				<div className="container py-16">
 					<div className="text-primary text-center mb-10">
 						<h1 className="font-bold text-5xl mb-5">
