@@ -21,8 +21,9 @@ const Hero = () => {
 						</span>{" "}
 						kekerasan seksual dan perundungan. SJW FILKOM juga
 						bekerja sama dengan Kemahasiswaan Fakultas Ilmu Komputer
-						untuk memberikan pelayanan terbaik bagi mahasiswa dalam
-						mengatasi masalah yang dihadapi.
+						untuk memberikan pelayanan terbaik serta menciptakan
+						ruang aman dan nyaman bagi mahasiswa dalam mengatasi
+						masalah yang dihadapi.
 					</p>
 					<div className="flex">
 						<a
