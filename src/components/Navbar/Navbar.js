@@ -11,7 +11,7 @@ const Navbar = () => {
 		el.classList.toggle("bi-x");
 	};
 	const headerScrolled = () => {
-	const header = document.querySelector("#header");
+		const header = document.querySelector("#header");
 		if (window.scrollY > 20) {
 			header.classList.add("header-scrolled");
 		} else {
@@ -21,10 +21,7 @@ const Navbar = () => {
 	window.addEventListener("scroll", headerScrolled);
 
 	return (
-		<div
-			className="header sticky top-0 left-0 w-full z-50 py-5"
-			id="header"
-		>
+		<div className="header sticky top-0 left-0 w-full py-5" id="header">
 			<div className="container flex justify-between items-center">
 				<Link to="./" className="text-2xl text-primary font-bold">
 					SJW FILKOM
@@ -35,11 +32,10 @@ const Navbar = () => {
 						onClick={(e) => toggleHamburger(e.target)}
 					></i>
 					<ul>
-						<NavLink to="./">Beranda</NavLink>
-
-						<NavLink to="./#artikel">Artikel</NavLink>
-						<NavLink to="./#layanan">Layanan</NavLink>
-						<NavLink to="./#faq">FaQ</NavLink>
+						<NavLink to="#">Beranda</NavLink>
+						<NavLink to="#artikel">Artikel</NavLink>
+						<NavLink to="#layanan">Layanan</NavLink>
+						<NavLink to="#faq">FaQ</NavLink>
 					</ul>
 				</nav>
 			</div>
