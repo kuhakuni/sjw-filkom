@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ig from '../img/ig.svg'
-import line from '../img/line.svg'
-import telegram from '../img/telegram.svg'
-import tiktok from '../img/tiktok.svg'
-import youtube from '../img/youtube.svg'
-import twitter from '../img/twitter.svg'
+
+import ig from '../../assets/img/ig.svg'
+import line from '../../assets/img/line.svg'
+import telegram from '../../assets/img/telegram.svg'
+import tiktok from '../../assets/img/tiktok.svg'
+import youtube from '../../assets/img/youtube.svg'
+import twitter from '../../assets/img/twitter.svg'
 
 const Footer = ()=>{
     return(
