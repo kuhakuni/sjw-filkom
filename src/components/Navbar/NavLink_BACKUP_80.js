@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import { HashLink as NavHash } from "react-router-hash-link";
 // import { NavLink } from "react-router-dom";
 const NavLink = ({ children, to }) => {
@@ -10,6 +11,11 @@ const NavLink = ({ children, to }) => {
 			behavior: "smooth",
 		});
 	};
+=======
+import { HashLink as Link} from "react-router-hash-link";
+
+const NavLink = ({ children, ...props }) => {
+>>>>>>> 7c69f17eeb7d55d20e08f34289712ba2d5f9e509
 	return (
 		<li>
 			<NavHash

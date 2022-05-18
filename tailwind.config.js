@@ -2,6 +2,11 @@ module.exports = {
 	content: ["./src/**/*.{js,jsx,ts,tsx}"],
 	theme: {
 		extend: {
+			screens : {
+				'xsm' : '460px',
+				'xsm2' : '500px',
+				'xsm3' : '550px',
+			  },
 			fontFamily: ["Poppins"],
 			colors: {
 				primary: "#31336C",
@@ -24,5 +29,6 @@ module.exports = {
 			},
 		},
 	},
+	mode: 'jit',
 	plugins: [],
 };

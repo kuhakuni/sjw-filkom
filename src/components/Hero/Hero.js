@@ -9,7 +9,7 @@ const Hero = () => {
 	return (
 		<div className={`flex text-white items-center`} style={hero}>
 			<div className="container lg:grid lg:grid-cols-2 gap-4 my-8">
-				<h1 className="text-5xl lg:text-7xl lg:leading-tight font-bold">
+				<h1 className="text-5xl lg:text-7xl leading-tight font-bold">
 					Karena saling jaga adalah sebuah kewajiban.
 				</h1>
 				<div className="mt-8">
@@ -21,8 +21,9 @@ const Hero = () => {
 						</span>{" "}
 						kekerasan seksual dan perundungan. SJW FILKOM juga
 						bekerja sama dengan Kemahasiswaan Fakultas Ilmu Komputer
-						untuk memberikan pelayanan terbaik bagi mahasiswa dalam
-						mengatasi masalah yang dihadapi.
+						untuk memberikan pelayanan terbaik serta menciptakan
+						ruang aman dan nyaman bagi mahasiswa dalam mengatasi
+						masalah yang dihadapi.
 					</p>
 					<div className="flex">
 						<a

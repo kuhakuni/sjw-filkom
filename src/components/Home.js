@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
-import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero/Hero";
 import Layanan from "./Layanan/Layanan";
 import Artikel from "./Artikel/Artikel";
 import Important from "./Important/Important";
 import Footer from "./Footer/Footer";
 import Alur from "./Alur/Alur";
+import Logo from "./Logo/Logo";
+import Accordion from "./Faq/Accordion";
+
 
 const Home = () => {
 	useEffect(() => {
@@ -13,12 +15,13 @@ const Home = () => {
 	});
 	return (
 		<>
-			<Navbar />
 			<Hero />
 			<Artikel />
 			<Layanan />
 			<Important />
 			<Alur />
+			<Accordion />
+			<Logo />
 			<Footer />
 		</>
 	);

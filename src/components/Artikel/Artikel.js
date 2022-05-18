@@ -4,7 +4,7 @@ import ArtikelCard from "./ArtikelCard";
 const Artikel = () => {
 	return (
 		<>
-			<div className="bg-secondary">
+			<div className="bg-secondary" id="artikel">
 				<div className="container py-16 grid sm:grid-cols-2 place-items-center lg:flex lg:justify-between gap-4 items-stretch">
 					<ArtikelCard />
 					<ArtikelCard />
