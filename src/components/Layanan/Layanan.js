@@ -4,13 +4,13 @@ import LayananCard from "./LayananCard";
 const Layanan = () => {
 	return (
 		<>
-			<div className={`${styles.container} min-h-screen`}  id="layanan">
+			<div className={`${styles.container} min-h-screen`} id="layanan">
 				<div className="container py-16">
 					<div className="text-primary text-center mb-10">
-						<h1 className="font-bold text-5xl mb-5">
+						<h1 className="font-bold text-xl sm:text-xl md:text-3xl lg:text-4xl mb-5">
 							Tahukah kamu?
 						</h1>
-						<p className="font-semibold text-2xl">
+						<p className="font-semibold text-sm sm:text-lg md:text-xl">
 							Kondisi psikologi seorang mahasiswa sangat
 							berpengaruh terhadap akademiknya. Masalah-masalah
 							kecil adalah pemicu menuju masalah-masalah yang
