@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import NavLink from "./NavLink";
 import "./Navbar.css";
 
 const Navbar = () => {
+	const location = useLocation().hash;
 	const toggleHamburger = (el) => {
 		const navMenu = document.querySelector("#nav-menu");
 		navMenu.classList.toggle("navbar-mobile");
@@ -23,7 +25,7 @@ const Navbar = () => {
 	return (
 		<div className="header sticky top-0 left-0 w-full py-5" id="header">
 			<div className="container flex justify-between items-center">
-				<Link to="./" className="text-2xl text-primary font-bold">
+				<Link smooth to="#" className="text-2xl text-primary font-bold">
 					SJW FILKOM
 				</Link>
 				<nav className="navbar" id="nav-menu">
@@ -32,10 +34,38 @@ const Navbar = () => {
 						onClick={(e) => toggleHamburger(e.target)}
 					></i>
 					<ul>
-						<NavLink to="#">Beranda</NavLink>
-						<NavLink to="#artikel">Artikel</NavLink>
-						<NavLink to="#layanan">Layanan</NavLink>
-						<NavLink to="#faq">FaQ</NavLink>
+						<NavLink
+							to="#"
+							className={`${
+								location === "" ? "active" : ""
+							} text-primary font-semibold`}
+						>
+							Beranda
+						</NavLink>
+						<NavLink
+							to="#artikel"
+							className={`${
+								location === "#artikel" ? "active" : ""
+							} text-primary font-semibold`}
+						>
+							Artikel
+						</NavLink>
+						<NavLink
+							to="#layanan"
+							className={`${
+								location === "#layanan" ? "active" : ""
+							} text-primary font-semibold`}
+						>
+							Layanan
+						</NavLink>
+						<NavLink
+							to="#faq"
+							className={`${
+								location === "#faq" ? "active" : ""
+							} text-primary font-semibold`}
+						>
+							FaQ
+						</NavLink>
 					</ul>
 				</nav>
 			</div>
