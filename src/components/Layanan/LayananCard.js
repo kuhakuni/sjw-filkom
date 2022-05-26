@@ -3,11 +3,13 @@ const LayananCard = ({ title, content, button, link }) => {
 	return (
 		<>
 			<div className="flex flex-col gap-2 justify-center">
-				<div className="grow leading-tight text-3xl p-8 font-semibold text-center text-white bg-primary">
-					<h1>{title}</h1>
+				<div className="grow p-8 text-center text-white bg-primary">
+					<h2 className="font-semibold text-xl md:text-2xl lg:text-3xl leading-tight">
+						{title}
+					</h2>
 				</div>
-				<div className="grow flex flex-col p-8 text-2xl text-center text-white bg-tertiary">
-					<p className="font-normal">{content}</p>
+				<div className="grow flex flex-col p-8 text-base md:text-lg lg:text-xl text-center text-white bg-tertiary">
+					<p>{content}</p>
 					{button && (
 						<a
 							href={link}

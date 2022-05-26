@@ -27,10 +27,10 @@ export default function Example() {
 						onClick={() => handleOpen(1)}
 						className="bg-white mb-3 md:mb-5 rounded-lg"
 					>
-						<AccordionHeader className="text-primary text-sm sm:text-base md:text-lg lg:text-xl py-2 font-semibold px-10">
+						<AccordionHeader className="text-primary text-base md:text-lg lg:text-xl py-3 font-semibold px-10">
 							Apa perbedaan ULTKSP dan Konseling?
 						</AccordionHeader>
-						<AccordionBody className="p-5 text-center font-semibold text-xs">
+						<AccordionBody className="p-5 text-center font-semibold text-xs md:text-sm">
 							Perbedaan ULTKSP dan Konseling ada pada konteks
 							permasalahannya. ULTKSP berfokus pada layanan
 							pelaporan dan konseling kekerasan seksual dan
@@ -45,11 +45,11 @@ export default function Example() {
 						onClick={() => handleOpen(2)}
 						className="bg-white mb-3 md:mb-5 rounded-lg"
 					>
-						<AccordionHeader className="text-primary text-sm sm:text-base md:text-lg lg:text-xl py-2 font-semibold px-10">
+						<AccordionHeader className="text-primary text-base md:text-lg lg:text-xl py-3 font-semibold px-10">
 							Mengapa harus menggunakan email UB saat mendaftar
 							ULTKSP atau Konseling?
 						</AccordionHeader>
-						<AccordionBody className="p-5 text-center font-semibold text-xs">
+						<AccordionBody className="p-5 text-center font-semibold text-xs md:text-sm">
 							Email UB bertujuan untuk memastikan bahwa kamu salah
 							satu dari mahasiswa FILKOM UB serta sebagai media
 							konfirmasi setelah kamu melakukan pendaftaran ULTKSP
@@ -62,10 +62,10 @@ export default function Example() {
 						onClick={() => handleOpen(3)}
 						className="bg-white mb-3 md:mb-5 rounded-lg"
 					>
-						<AccordionHeader className="text-primary text-sm sm:text-base md:text-lg lg:text-xl py-2 font-semibold px-10">
+						<AccordionHeader className="text-primary text-base md:text-lg lg:text-xl py-3 font-semibold px-10">
 							Apakah kerahasiaan data saya terjamin?
 						</AccordionHeader>
-						<AccordionBody className="p-5 text-center font-semibold text-xs">
+						<AccordionBody className="p-5 text-center font-semibold text-xs md:text-sm">
 							Tidak perlu khawatir, privasi dan kerahasiaan Anda
 							adalah prioritas kami. Segala data dan identitas
 							hanya digunakan untuk kepentingan konseling.
@@ -77,10 +77,10 @@ export default function Example() {
 						onClick={() => handleOpen(4)}
 						className="bg-white mb-3 md:mb-5 rounded-lg"
 					>
-						<AccordionHeader className="text-primary text-sm sm:text-base md:text-lg lg:text-xl py-2 font-semibold px-10">
+						<AccordionHeader className="text-primary text-base md:text-lg lg:text-xl py-3 font-semibold px-10">
 							Bagaimana menentukan jadwal konseling saya?
 						</AccordionHeader>
-						<AccordionBody className="p-5 text-center font-semibold text-xs">
+						<AccordionBody className="p-5 text-center font-semibold text-xs md:text-sm ">
 							Untuk jadwal konseling akan dijadwalkan oleh
 							kemahasiswaan dan diinformasikan lebih lanjut
 							melalui contact person yang telah kamu berikan pada
@@ -93,10 +93,10 @@ export default function Example() {
 						onClick={() => handleOpen(5)}
 						className="bg-white mb-3 md:mb-5 rounded-lg"
 					>
-						<AccordionHeader className="text-primary text-sm sm:text-base md:text-lg lg:text-xl py-2 font-semibold px-10">
+						<AccordionHeader className="text-primary text-base md:text-lg lg:text-xl py-3 font-semibold px-10">
 							Siapa yang akan melayani saat konseling?
 						</AccordionHeader>
-						<AccordionBody className="p-5 text-center font-semibold text-xs">
+						<AccordionBody className="p-5 text-center font-semibold text-xs md:text-sm">
 							Saat konseling kamu akan dilayani oleh psikolog dari
 							fakultas atau teman sebaya yang sudah terverifikasi
 							keahlianya.

@@ -7,10 +7,10 @@ const Layanan = () => {
 			<div className={`${styles.container} min-h-screen`} id="layanan">
 				<div className="container py-16">
 					<div className="text-primary text-center mb-10">
-						<h1 className="font-bold text-xl sm:text-xl md:text-3xl lg:text-4xl mb-5">
+						<h1 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-5">
 							Tahukah kamu?
 						</h1>
-						<p className="font-semibold text-sm sm:text-lg md:text-xl">
+						<p className="font-semibold text-base md:text-lg lg:text-xl">
 							Kondisi psikologi seorang mahasiswa sangat
 							berpengaruh terhadap akademiknya. Masalah-masalah
 							kecil adalah pemicu menuju masalah-masalah yang
@@ -18,7 +18,7 @@ const Layanan = () => {
 						</p>
 					</div>
 					<div className="flex justify-center">
-						<div className="grow leading-tight text-4xl p-8 font-bold text-center text-white bg-secondary">
+						<div className="grow leading-tight text-2xl md:text-3xl lg:text-4xl p-8 font-bold text-center text-white bg-secondary">
 							Layanan yang disediakan
 						</div>
 					</div>
