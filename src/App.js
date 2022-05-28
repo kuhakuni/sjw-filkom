@@ -2,16 +2,18 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { HashRouter } from "react-router-dom";
 import Home from "./components/Home";
-import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Logo from "./components/Logo/Logo";
+import Konseling from "./components/Konseling";
 
 function App() {
 	return (
 		<HashRouter>
-			<Navbar />
 			<Routes>
 				<Route exact path="/" element={<Home />} />
+				<Route path="/konseling" element={<Konseling />} />
 			</Routes>
+			<Logo />
 			<Footer />
 		</HashRouter>
 	);
