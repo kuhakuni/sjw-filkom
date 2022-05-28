@@ -17,7 +17,7 @@ const Important = () => {
 						dijamin keamanannya dan langsung dianalisis oleh
 						kemahasiswaan. Tenaga ahli yang berperan dalam SJW
 						FILKOM sudah terkualifikasi kemampuannya untuk
-						memberikan pelayanan terbaik kamu.
+						memberikan pelayanan terbaik.
 					</p>
 				</div>
 				<div className="hidden md:block self-center w-full">
