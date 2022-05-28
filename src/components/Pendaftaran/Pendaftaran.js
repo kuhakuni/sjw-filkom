@@ -3,7 +3,7 @@ import React from "react";
 const Pendaftaran = () => {
 	return (
 		<>
-			<div className="bg-primary text-white">
+			<div className="bg-primary text-white" id="pendaftaran">
 				<div className="container py-16">
 					<h1 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-10">
 						Pendaftaran Calon Konselor Sebaya
