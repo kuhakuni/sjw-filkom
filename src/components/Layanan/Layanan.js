@@ -4,7 +4,7 @@ import LayananCard from "./LayananCard";
 const Layanan = () => {
 	return (
 		<>
-			<div className={`${styles.container} min-h-screen`} id="layanan">
+			<div className={`${styles.container}`} id="layanan">
 				<div className="container py-16">
 					<div className="text-primary text-center mb-10">
 						<h1 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-5">
@@ -41,6 +41,7 @@ const Layanan = () => {
 								" Pelayanan konseling dengan teman sebaya yang telah tersertifikasi untuk menceritakan masalah yang sedang kamu hadapi."
 							}
 							button={"Selengkapnya"}
+							link={"/konseling"}
 						/>
 						<LayananCard
 							title={"Buku Saku"}
@@ -48,6 +49,7 @@ const Layanan = () => {
 								"Buku panduan bagi mahasiswa yang berisikan edukasi kekerasan seksual dan perundungan serta alur dalam pelaporannya."
 							}
 							button={"Download"}
+							link={"/#"}
 						/>
 					</div>
 				</div>
