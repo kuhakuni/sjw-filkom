@@ -3,10 +3,9 @@ import Hero from "./Hero/Hero";
 import Layanan from "./Layanan/Layanan";
 import Artikel from "./Artikel/Artikel";
 import Important from "./Important/Important";
-import Footer from "./Footer/Footer";
 import Alur from "./Alur/Alur";
 import Logo from "./Logo/Logo";
-import Accordion from "./Faq/Accordion";
+import Faq from "./Faq/Accordionsss";
 
 
 const Home = () => {
@@ -20,9 +19,9 @@ const Home = () => {
 			<Layanan />
 			<Important />
 			<Alur />
-			<Accordion />
+			<Faq />
 			<Logo />
-			<Footer />
+	
 		</>
 	);
 };
