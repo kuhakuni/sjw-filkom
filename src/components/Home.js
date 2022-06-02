@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero/Hero";
 import Layanan from "./Layanan/Layanan";
@@ -25,10 +25,10 @@ import Accordion from "./Faq/Accordion";
 
 const Home = () => {
 	// const [artikel, setArtikel] = React.useState([]);
-	// useEffect(() => {
-	// 	getArtikel().then((data) => setArtikel(data));
-	// 	document.title = "SJW FILKOM | Saling Jaga Warga FILKOM";
-	// });
+	useEffect(() => {
+		// getArtikel().then((data) => setArtikel(data));
+		document.title = "SJW FILKOM | Saling Jaga Warga FILKOM";
+	});
 
 	// console.log(artikel);
 	return (
