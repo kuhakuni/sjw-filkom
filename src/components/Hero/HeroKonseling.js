@@ -1,10 +1,9 @@
 import React from "react";
-import bg from "../../assets/img/bg-konseling.png";
 
 const HeroKonseling = () => {
 	const hero = {
 		minHeight: "50vh",
-		background: `url(${bg}) center center / cover no-repeat`,
+		background: `url(/assets/img/bg-konseling.png) center center / cover no-repeat`,
 	};
 	return (
 		<>

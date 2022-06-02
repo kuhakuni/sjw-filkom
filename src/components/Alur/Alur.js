@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Alur.module.css";
-import List from "../../assets/img/alur.svg";
 const Alur = () => {
 	return (
 		<>
@@ -17,7 +16,7 @@ const Alur = () => {
 				<div className="bg-primary py-8 pl-5 pr-6 mt-5 text-white font-semibold text-sm flex justify-center">
 					<div className=" mr-4">
 						<img
-							src={List}
+							src="/assets/img/list.svg"
 							alt="missing list"
 							className="max-h-72 min-h-full xsm3:max-h-56 sm:max-h-72 sm:min-h-46 md:min-h-72 md:max-h-fit"
 						></img>

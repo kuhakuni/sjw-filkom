@@ -1,10 +1,9 @@
 import React from "react";
-import bg from "../../assets/img/bg-header.png";
 
 const Hero = () => {
 	const hero = {
 		minHeight: "90vh",
-		background: `url(${bg}) center center / cover no-repeat`,
+		background: `url(/assets/img/bg-header.png) center center / cover no-repeat`,
 	};
 	return (
 		<div className={`flex text-white items-center`} style={hero}>

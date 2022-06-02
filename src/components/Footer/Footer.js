@@ -1,11 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import ig from "../../assets/img/ig.svg";
-import line from "../../assets/img/line.svg";
-import telegram from "../../assets/img/telegram.svg";
-import tiktok from "../../assets/img/tiktok.svg";
-import youtube from "../../assets/img/youtube.svg";
-import twitter from "../../assets/img/twitter.svg";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -14,7 +8,7 @@ const Footer = () => {
 				<div className="flex flex-row justify-center py-24">
 					<Link to="https://www.tiktok.com/@bemfilkomub">
 						<img
-							src={tiktok}
+							src="/assets/img/tiktok.svg"
 							alt="missing tiktok img"
 							className="md:pr-12 pr-4 pl-4"
 						></img>
@@ -22,7 +16,7 @@ const Footer = () => {
 
 					<Link to="/">
 						<img
-							src={line}
+							src="/assets/img/line.svg"
 							alt="missing line img"
 							className="md:pr-12 pr-4"
 						></img>
@@ -30,7 +24,7 @@ const Footer = () => {
 
 					<Link to="https://www.instagram.com/bemfilkomub/">
 						<img
-							src={ig}
+							src="/assets/img/ig.svg"
 							alt="missing ig img"
 							className="md:pr-12 pr-4"
 						></img>
@@ -38,7 +32,7 @@ const Footer = () => {
 
 					<Link to="https://www.instagram.com/">
 						<img
-							src={telegram}
+							src="/assets/img/telegram.svg"
 							alt="missing telegram img"
 							className="md:pr-12 pr-4"
 						></img>
@@ -46,7 +40,7 @@ const Footer = () => {
 
 					<Link to="https://twitter.com/bemfilkomub?lang=en">
 						<img
-							src={twitter}
+							src="/assets/img/twitter.svg"
 							alt="missing twitter img"
 							className="md:pr-12 pr-4"
 						></img>
@@ -54,7 +48,7 @@ const Footer = () => {
 
 					<Link to="https://www.youtube.com/c/BEMFILKOMUB">
 						<img
-							src={youtube}
+							src="/assets/img/youtube.svg"
 							alt="missing youtube img"
 							className="md:pr-12 pr-4"
 						></img>
