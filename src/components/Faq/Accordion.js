@@ -24,7 +24,7 @@ const Accordion = ({ question, answer }) => {
           : 
     
               <img
-                className='w-12 md:w-16 '
+                className='w-12 md:w-16 bg-primary '
                 alt='missing icon'
                 src={Arrows}
                 >

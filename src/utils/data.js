@@ -1,5 +1,6 @@
 export const dataFaq = [
     {
+        id:1,
         question:"Apa perbedaan ULTKSP dan Konseling?",
         answer:`Perbedaan ULTKSP dan Konseling ada pada konteks
         permasalahannya. ULTKSP berfokus pada layanan
@@ -9,6 +10,7 @@ export const dataFaq = [
         bimbingan karir, dan sebagainya.`
     },
     {
+        id:2,
         question:"Mengapa harus menggunakan email UB saat mendaftar ULTKSP atau Konseling?",
         answer:`Email UB bertujuan untuk memastikan bahwa kamu salah
         satu dari mahasiswa FILKOM UB serta sebagai media
@@ -16,6 +18,7 @@ export const dataFaq = [
         dan Konseling.`
     },
     {
+        id:3,
         question:"Apakah kerahasiaan data saya terjamin?",
         answer:`Tidak perlu khawatir, privasi dan kerahasiaan Anda
         adalah prioritas kami. Segala data dan identitas

@@ -5,8 +5,8 @@ import {
 	AccordionBody,
 } from "@material-tailwind/react";
 import { Fragment } from "react";
-import Tanya from "../../assets/img/tanda tanya.svg"
-import Arrows from '../../assets/img/arrow.svg'
+import { dataFaq } from '../../utils/data';
+
 export default function Example() {
 	const [open, setOpen] = useState(0);
 
@@ -16,7 +16,7 @@ export default function Example() {
 
 	return (
 		<Fragment>
-			<div className="bg-secondary pb-3" id="faq">
+			<div className="bg-secondary pb-3 h-[600px] lg:h-[600px]" id="faq">
 				<div>
 					<h1 className="text-center text-primary font-bold text-xl sm:text-2xl lg:text-3xl xl:text-4xl pt-10 pb-3 md:pb-8">
 						Frequently Asked Questions
@@ -28,35 +28,26 @@ export default function Example() {
 					<Accordion
 						open={open === 1}
 						onClick={() => handleOpen(1)}
-						className="bg-white mb-3 md:mb-5 rounded-lg"
+						className={`${open == 1 ? 'text-white bg-primary rounded-lg' : 'text-primary bg-white rounded-lg'}bg-white md:mb-5 rounded-lg mb-3`}
 					>
-						<div className="content-center">
-							<div className="flex flex-row justify-around text-primary text-sm sm:text-base md:text-lg lg:text-xl py-2 font-semibold px-10 items-center">
-							
-								<h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold w-10/12 text-center ">Apa perbedaan ULTKSP dan Konseling?</h1>
-								{
-									open === 1 ?
+						<div className="content-center ">
+						
+							<div className={`${open ==1 ? 'text-white bg-primary rounded-lg' : 'text-primary rounded-lg'} flex flex-row justify-between text-primary text-sm sm:text-base md:text-lg lg:text-xl font-semibold px-5 items-center align-middle`}>
 
-									<img
-                					className='w-12 md:w-16 -rotate-90 ease-in duration-75'
-                					alt='missing icon'
-                					src={Arrows}
-                				>
-              					</img>
-								  :
-								  <img
-                					className='w-12 md:w-16'
-                					alt='missing icon'
-                					src={Arrows}
-                				>
-              					</img>
-								}
+								<div className={`${open == 1 ? 'text-white' : 'text-primary'} text-5xl`}>
+									<ion-icon name="help-circle-outline" className=""></ion-icon>
+								</div>
+
+								<h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold w-10/12 text-center ">Apa perbedaan ULTKSP dan Konseling?</h1>
+
+								<div className={`${open == 1 ? 'text-white -rotate-90 ease-in duration-75' : 'text-primary ease-in duration-75'} text-3xl content-center`}>
+
+									<ion-icon name="caret-forward-outline" className="items-center"></ion-icon>
+								</div>
 								
 							</div>
 						</div>
-
-						
-						<AccordionBody className="p-5 text-center font-semibold text-xs">
+						<AccordionBody className="text-center font-semibold text-base lg:text-lg p-5 bg-primary text-white rounded-lg h-[110px] ">
 							Perbedaan ULTKSP dan Konseling ada pada konteks
 							permasalahannya. ULTKSP berfokus pada layanan
 							pelaporan dan konseling kekerasan seksual dan
@@ -66,158 +57,127 @@ export default function Example() {
 						</AccordionBody>
 						</Accordion>
 
-					<Accordion
+						<Accordion
 						open={open === 2}
 						onClick={() => handleOpen(2)}
-						className="bg-white mb-3 md:mb-5 rounded-lg"
+						className={`${open == 2 ? 'text-white bg-primary rounded-lg' : 'text-primary bg-white rounded-lg'}bg-white md:mb-5 rounded-lg mb-3`}
 					>
+						<div className="content-center ">
 						
-						<div className="content-center">
-							<div className="flex flex-row justify-around text-primary text-sm sm:text-base md:text-lg lg:text-xl py-2 font-semibold px-10 items-center">
-							
-								<h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold w-10/12 text-center ">Mengapa harus menggunakan email UB saat mendaftar ULTKSP atau Konseling?</h1>
-								{
-									open === 2 ?
+							<div className={`${open ==2 ? 'text-white bg-primary rounded-lg' : 'text-primary rounded-lg'} flex flex-row justify-between text-primary text-sm sm:text-base md:text-lg lg:text-xl font-semibold px-5 items-center align-middle`}>
 
-									<img
-                					className='w-12 md:w-16 -rotate-90 ease-in duration-75'
-                					alt='missing icon'
-                					src={Arrows}
-                				>
-              					</img>
-								  :
-								  <img
-                					className='w-12 md:w-16'
-                					alt='missing icon'
-                					src={Arrows}
-                				>
-              					</img>
-								}
+								<div className={`${open == 2 ? 'text-white' : 'text-primary'} text-5xl`}>
+									<ion-icon name="help-circle-outline" className=""></ion-icon>
+								</div>
+
+								<h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold w-10/12 text-center ">Mengapa harus menggunakan email UB saat mendaftar ULTKSP atau Konseling?</h1>
+
+								<div className={`${open == 2 ? 'text-white -rotate-90 ease-in duration-75' : 'text-primary ease-in duration-75'} text-3xl content-center`}>
+
+									<ion-icon name="caret-forward-outline" className="items-center"></ion-icon>
+								</div>
 								
 							</div>
 						</div>
-
-						<AccordionBody className="p-5 text-center font-semibold text-xs">
-							Email UB bertujuan untuk memastikan bahwa kamu salah
-							satu dari mahasiswa FILKOM UB serta sebagai media
-							konfirmasi setelah kamu melakukan pendaftaran ULTKSP
-							dan Konseling.
+						<AccordionBody className="text-center font-semibold text-base lg:text-lg p-5 bg-primary text-white rounded-lg h-[110px] ">
+						Email UB bertujuan untuk memastikan bahwa kamu salah
+        satu dari mahasiswa FILKOM UB serta sebagai media
+        konfirmasi setelah kamu melakukan pendaftaran ULTKSP
+        dan Konseling.
 						</AccordionBody>
-					</Accordion>
+						</Accordion>
 
-					<Accordion
+						<Accordion
 						open={open === 3}
 						onClick={() => handleOpen(3)}
-						className="bg-white mb-3 md:mb-5 rounded-lg"
+						className={`${open == 3 ? 'text-white bg-primary rounded-lg' : 'text-primary bg-white rounded-lg'}bg-white md:mb-5 rounded-lg mb-3`}
 					>
-						<div className="content-center">
-							<div className="flex flex-row justify-around text-primary text-sm sm:text-base md:text-lg lg:text-xl py-2 font-semibold px-10 items-center">
-							
-								<h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold w-10/12 text-center ">Apakah kerahasiaan data saya terjamin?</h1>
-								{
-									open === 3 ?
+						<div className="content-center ">
+						
+							<div className={`${open ==3 ? 'text-white bg-primary rounded-lg' : 'text-primary rounded-lg'} flex flex-row justify-between text-primary text-sm sm:text-base md:text-lg lg:text-xl font-semibold px-5 items-center align-middle`}>
 
-									<img
-                					className='w-12 md:w-16 -rotate-90 ease-in duration-75'
-                					alt='missing icon'
-                					src={Arrows}
-                				>
-              					</img>
-								  :
-								  <img
-                					className='w-12 md:w-16'
-                					alt='missing icon'
-                					src={Arrows}
-                				>
-              					</img>
-								}
+								<div className={`${open == 3 ? 'text-white' : 'text-primary'} text-5xl`}>
+									<ion-icon name="help-circle-outline" className=""></ion-icon>
+								</div>
+
+								<h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold w-10/12 text-center ">Apakah kerahasiaan data saya terjamin?</h1>
+
+								<div className={`${open == 3 ? 'text-white -rotate-90 ease-in duration-75' : 'text-primary ease-in duration-75'} text-3xl content-center`}>
+
+									<ion-icon name="caret-forward-outline" className="items-center"></ion-icon>
+								</div>
 								
 							</div>
 						</div>
-
-						<AccordionBody className="p-5 text-center font-semibold text-xs">
-							Tidak perlu khawatir, privasi dan kerahasiaan Anda
-							adalah prioritas kami. Segala data dan identitas
-							hanya digunakan untuk kepentingan konseling.
+						<AccordionBody className="text-center font-semibold text-base lg:text-lg p-5 bg-primary text-white rounded-lg h-[110px] ">
+						Tidak perlu khawatir, privasi dan kerahasiaan Anda
+        adalah prioritas kami. Segala data dan identitas
+        hanya digunakan untuk kepentingan konseling.
 						</AccordionBody>
-					</Accordion>
+						</Accordion>
 
-					<Accordion
+						<Accordion
 						open={open === 4}
 						onClick={() => handleOpen(4)}
-						className="bg-white mb-3 md:mb-5 rounded-lg"
+						className={`${open == 4 ? 'text-white bg-primary rounded-lg' : 'text-primary bg-white rounded-lg'}bg-white md:mb-5 rounded-lg mb-3`}
 					>
-						<div className="content-center">
-							<div className="flex flex-row justify-around text-primary text-sm sm:text-base md:text-lg lg:text-xl py-2 font-semibold px-10 items-center">
-							
-								<h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold w-10/12 text-center ">Bagaimana menentukan jadwal konseling saya?</h1>
-								{
-									open === 4 ?
+						<div className="content-center ">
+						
+							<div className={`${open ==4 ? 'text-white bg-primary rounded-lg' : 'text-primary rounded-lg'} flex flex-row justify-between text-primary text-sm sm:text-base md:text-lg lg:text-xl font-semibold px-5 items-center align-middle`}>
 
-									<img
-                					className='w-12 md:w-16 -rotate-90 ease-in duration-75'
-                					alt='missing icon'
-                					src={Arrows}
-                				>
-              					</img>
-								  :
-								  <img
-                					className='w-12 md:w-16'
-                					alt='missing icon'
-                					src={Arrows}
-                				>
-              					</img>
-								}
+								<div className={`${open == 4 ? 'text-white' : 'text-primary'} text-5xl`}>
+									<ion-icon name="help-circle-outline" className=""></ion-icon>
+								</div>
+
+								<h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold w-10/12 text-center ">Bagaimana menentukan jadwal konseling saya?</h1>
+
+								<div className={`${open == 4 ? 'text-white -rotate-90 ease-in duration-75' : 'text-primary ease-in duration-75'} text-3xl content-center`}>
+
+									<ion-icon name="caret-forward-outline" className="items-center"></ion-icon>
+								</div>
 								
 							</div>
 						</div>
-
-						<AccordionBody className="p-5 text-center font-semibold text-xs">
-							Untuk jadwal konseling akan dijadwalkan oleh
-							kemahasiswaan dan diinformasikan lebih lanjut
-							melalui contact person yang telah kamu berikan pada
-							saat pendaftaran.
+						<AccordionBody className="text-center font-semibold text-base lg:text-lg p-5 bg-primary text-white rounded-lg h-[110px] ">
+						Untuk jadwal konseling akan dijadwalkan oleh
+        kemahasiswaan dan diinformasikan lebih lanjut
+        melalui contact person yang telah kamu berikan pada
+        saat pendaftaran.
 						</AccordionBody>
-					</Accordion>
+						</Accordion>
 
-					<Accordion
+						<Accordion
 						open={open === 5}
 						onClick={() => handleOpen(5)}
-						className="bg-white mb-3 md:mb-5 rounded-lg"
+						className={`${open == 5 ? 'text-white bg-primary rounded-lg' : 'text-primary bg-white rounded-lg'}bg-white md:mb-5 rounded-lg mb-3`}
 					>
-						<div className="content-center">
-							<div className="flex flex-row justify-around text-primary text-sm sm:text-base md:text-lg lg:text-xl py-2 font-semibold px-10 items-center">
-							
-								<h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold w-10/12 text-center ">Siapa yang akan melayani saat konseling?</h1>
-								{
-									open === 5 ?
+						<div className="content-center ">
+						
+							<div className={`${open ==5 ? 'text-white bg-primary rounded-lg' : 'text-primary rounded-lg'} flex flex-row justify-between text-primary text-sm sm:text-base md:text-lg lg:text-xl font-semibold px-5 items-center align-middle`}>
 
-									<img
-                					className='w-12 md:w-16 -rotate-90 ease-in duration-75'
-                					alt='missing icon'
-                					src={Arrows}
-                				>
-              					</img>
-								  :
-								  <img
-                					className='w-12 md:w-16'
-                					alt='missing icon'
-                					src={Arrows}
-                				>
-              					</img>
-								}
+								<div className={`${open == 5 ? 'text-white' : 'text-primary'} text-5xl`}>
+									<ion-icon name="help-circle-outline" className=""></ion-icon>
+								</div>
+
+								<h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold w-10/12 text-center ">Siapa yang akan melayani saat konseling?</h1>
+
+								<div className={`${open == 5 ? 'text-white -rotate-90 ease-in duration-75' : 'text-primary ease-in duration-75'} text-3xl content-center`}>
+
+									<ion-icon name="caret-forward-outline" className="items-center"></ion-icon>
+								</div>
 								
 							</div>
 						</div>
-
-						<AccordionBody className="p-5 text-center font-semibold text-xs">
-							Saat konseling kamu akan dilayani oleh psikolog dari
-							fakultas atau teman sebaya yang sudah terverifikasi
-							keahlianya.
+						<AccordionBody className="text-center font-semibold text-base lg:text-lg p-5 bg-primary text-white rounded-lg h-[110px] ">
+						Saat konseling kamu akan dilayani oleh psikolog dari
+        				fakultas atau teman sebaya yang sudah terverifikasi
+        				keahlianya.
 						</AccordionBody>
-					</Accordion>
+						</Accordion>
+
 				</div>
 			</div>
 		</Fragment>
 	);
 }
+ 
