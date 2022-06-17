@@ -1,13 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero/Hero";
 import Layanan from "./Layanan/Layanan";
 // import Artikel from "./Artikel/Artikel";
 import Important from "./Important/Important";
 import Alur from "./Alur/Alur";
-import Logo from "./Logo/Logo";
 import Faq from "./Faq/Accordionsss";
-import Accordion from "./Faq/Accordionsss";
 
 // async function getArtikel() {
 // 	const data = await fetch(
@@ -27,10 +25,10 @@ import Accordion from "./Faq/Accordionsss";
 
 const Home = () => {
 	// const [artikel, setArtikel] = React.useState([]);
-	// useEffect(() => {
-	// 	getArtikel().then((data) => setArtikel(data));
-	// 	document.title = "SJW FILKOM | Saling Jaga Warga FILKOM";
-	// });
+	useEffect(() => {
+		// getArtikel().then((data) => setArtikel(data));
+		document.title = "SJW FILKOM | Saling Jaga Warga FILKOM";
+	});
 
 	// console.log(artikel);
 	return (

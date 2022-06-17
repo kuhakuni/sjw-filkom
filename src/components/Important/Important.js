@@ -1,12 +1,14 @@
 import React from "react";
-import cloudLeft from "../../assets/img/leftcloudred.svg";
-import cloudRight from "../../assets/img/rightcloudyellow.svg";
 const Important = () => {
 	return (
 		<div className="bg-primary"  id='artikel'>
 			<div className="container py-16 flex flex-row gap-12 content-center justify-between ">
 				<div className="hidden md:block self-center w-full">
-					<img className="lg:w-3/4 mx-auto" src={cloudLeft} alt="" />
+					<img
+						className="lg:w-3/4 mx-auto"
+						src="/assets/img/leftcloudred.svg"
+						alt="awan kiri"
+					/>
 				</div>
 				<div className="flex flex-col items-center justify-center text-center text-white">
 					<h1 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-8">
@@ -21,7 +23,11 @@ const Important = () => {
 					</p>
 				</div>
 				<div className="hidden md:block self-center w-full">
-					<img className="lg:w-3/4 mx-auto" src={cloudRight} alt="" />
+					<img
+						className="lg:w-3/4 mx-auto"
+						src="/assets/img/rightcloudyellow.svg"
+						alt="awan kanan"
+					/>
 				</div>
 			</div>
 		</div>

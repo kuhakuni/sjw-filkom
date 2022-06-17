@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Fungsi from "./Fungsi/Fungsi";
 import HeroKonseling from "./Hero/HeroKonseling";
 import NavbarKonseling from "./Navbar/NavbarKonseling";
@@ -7,6 +7,9 @@ import Tentang from "./Tentang/Tentang";
 import Struk from "./Struktur/Struktur";
 
 const Konseling = () => {
+	useEffect(() => {
+		document.title = "SJW FILKOM | Konseling Sebaya FILKOM";
+	});
 	return (
 		<>
 			<NavbarKonseling />
