@@ -13,7 +13,7 @@ const Pendaftaran = () => {
 							<p>a.</p>
 							<p>Persyaratan Calon Konselor Sebaya</p>
 						</div>
-						<ol className="list-decimal list-inside ml-10 font-semibold text-base md:text-lg lg:text-xl">
+						<ol className="list-decimal list-outside ml-14 font-semibold text-base md:text-lg lg:text-xl">
 							<li className="mb-2">
 								Merupakan mahasiswa aktif FILKOM UB
 							</li>
@@ -55,7 +55,7 @@ const Pendaftaran = () => {
 								<span className="italic">Konselor Sebaya</span>
 							</p>
 						</div>
-						<ol className="list-decimal list-inside ml-10 font-semibold text-base md:text-lg lg:text-xl">
+						<ol className="list-decimal list-outside ml-14 font-semibold text-base md:text-lg lg:text-xl">
 							<li className="mb-2">
 								Merupakan mahasiswa aktif FILKOM UB
 							</li>
