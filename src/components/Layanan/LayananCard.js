@@ -10,7 +10,7 @@ const LayananCard = ({ title, content, button, link }) => {
 					</h2>
 				</div>
 				<div className="grow flex flex-col px-24 text-base md:text-lg lg:text-xl text-center text-white bg-tertiary py-10">
-					<p className="pb-10">{content}</p>
+					<p>{content}</p>
 					{button && (
 						<Link
 							to={link}
