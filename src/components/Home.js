@@ -5,7 +5,7 @@ import Layanan from "./Layanan/Layanan";
 // import Artikel from "./Artikel/Artikel";
 import Important from "./Important/Important";
 import Alur from "./Alur/Alur";
-import Faq from "./Faq/Accordionsss";
+import Faq from "./Faq/Faq";
 
 // async function getArtikel() {
 // 	const data = await fetch(
