@@ -1,12 +1,14 @@
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports = withMT({
 	content: ["./src/**/*.{js,jsx,ts,tsx}"],
 	theme: {
 		extend: {
-			screens : {
-				'xsm' : '460px',
-				'xsm2' : '500px',
-				'xsm3' : '550px',
-			  },
+			screens: {
+				xsm: "460px",
+				xsm2: "500px",
+				xsm3: "550px",
+			},
 			fontFamily: ["Poppins"],
 			colors: {
 				primary: "#31336C",
@@ -29,6 +31,6 @@ module.exports = {
 			},
 		},
 	},
-	mode: 'jit',
+	mode: "jit",
 	plugins: [],
-};
+});
