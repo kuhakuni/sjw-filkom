@@ -15,26 +15,12 @@ const Alur = () => {
 
 				<div className="bg-primary py-8 pl-5 pr-6 mt-5 text-white font-semibold text-sm flex justify-center">
 					<div className=" mr-4">
-						<img
-							src="/assets/img/list.svg"
-							alt="missing list"
-							className="max-h-72 min-h-full xsm3:max-h-56 sm:max-h-72 sm:min-h-46 md:min-h-72 md:max-h-fit"
-						></img>
-					</div>
-					<div className="">
-						<h1 className="pb-3 xsm:pb-8 sm:pb-10 xsm:text-base md:text-4xl">
-							Klik tombol “Daftar Yuk!” di bagian atas{" "}
-						</h1>
-						<h1 className="pb-3 xsm:pb-8 sm:pb-10 xsm:text-base md:text-4xl">
-							Isi google form yang telah disediakan untuk
-							pendaftaran{" "}
-						</h1>
-						<h1 className="pb-3 xsm:pb-8 sm:pb-10 xsm:text-base md:text-4xl">
-							Pilih layanan yang kamu inginkan pada google form.{" "}
-						</h1>
-						<h1 className="xsm:text-base sm:text-2xl ">
-							Tunggu email konfirmasi yang akan dikirimkan.{" "}
-						</h1>
+					<img
+						src="/assets/img/alur.png"
+						className="flex place-self-center ml-12"
+						alt="missing logo"
+					></img>
+
 					</div>
 				</div>
 			</div>
