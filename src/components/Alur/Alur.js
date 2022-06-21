@@ -14,10 +14,10 @@ const Alur = () => {
 				</p>
 
 				<div className="bg-primary py-8 pl-5 pr-6 mt-5 text-white font-semibold text-sm flex justify-center">
-					<div className=" mr-4">
+					<div className="mr-4">
 					<img
 						src="/assets/img/alur.png"
-						className="flex place-self-center ml-12"
+						className="flex place-self-center md:ml-12 scale-110 ml-6 md:scale-100"
 						alt="missing logo"
 					></img>
 
