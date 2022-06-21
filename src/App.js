@@ -26,7 +26,6 @@ function App() {
 			</Routes>
 			<Logo />
 			<Footer />
-			{/* </ScrollToTop> */}
 		</HashRouter>
 	);
 }

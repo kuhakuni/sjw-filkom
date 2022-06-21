@@ -1,7 +1,7 @@
 import React from "react";
 const Important = () => {
 	return (
-		<div className="bg-primary"  id='artikel'>
+		<div className="bg-primary">
 			<div className="container py-16 flex flex-row gap-12 content-center justify-between ">
 				<div className="hidden md:block self-center w-full">
 					<img
