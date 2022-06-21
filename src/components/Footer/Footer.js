@@ -6,53 +6,74 @@ const Footer = () => {
 		<>
 			<footer className="flex flex-col bg-primary text-white">
 				<div className="flex flex-row justify-center py-24">
-					<Link to="https://www.tiktok.com/@bemfilkomub">
+					<a
+						href="https://www.tiktok.com/@bemfilkomub"
+						target="_blank"
+						rel="noopener noreferrer"
+						className=""
+					>
 						<img
 							src="/assets/img/tiktok.svg"
 							alt="missing tiktok img"
-							className="md:pr-12 pr-4 pl-4"
+							className="md:pr-12 pr-4 pl-4 "
 						></img>
-					</Link>
+					</a>
 
-					<Link to="/">
+					<a
+						href="line://ti/p/@csj9184g"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<img
 							src="/assets/img/line.svg"
 							alt="missing line img"
 							className="md:pr-12 pr-4"
 						></img>
-					</Link>
+					</a>
 
-					<Link to="https://www.instagram.com/bemfilkomub/">
+					<a
+						href="https://www.instagram.com/bemfilkomub"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<img
 							src="/assets/img/ig.svg"
 							alt="missing ig img"
 							className="md:pr-12 pr-4"
 						></img>
-					</Link>
+					</a>
 
-					<Link to="https://www.instagram.com/">
+					<a href="/" target="_blank" rel="noopener noreferrer">
 						<img
 							src="/assets/img/telegram.svg"
 							alt="missing telegram img"
 							className="md:pr-12 pr-4"
 						></img>
-					</Link>
+					</a>
 
-					<Link to="https://twitter.com/bemfilkomub?lang=en">
+					<a
+						href="https://twitter.com/bemfilkomub"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<img
 							src="/assets/img/twitter.svg"
 							alt="missing twitter img"
 							className="md:pr-12 pr-4"
 						></img>
-					</Link>
+					</a>
 
-					<Link to="https://www.youtube.com/c/BEMFILKOMUB">
+					<a
+						href="https://www.youtube.com/c/BEMFILKOMUB"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<img
 							src="/assets/img/youtube.svg"
 							alt="missing youtube img"
 							className="md:pr-12 pr-4"
 						></img>
-					</Link>
+					</a>
 				</div>
 
 				<div className="flex flex-col mx-auto text-center">
