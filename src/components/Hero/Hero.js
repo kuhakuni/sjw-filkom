@@ -30,7 +30,7 @@ const Hero = () => {
 						<a
 							href="https://forms.gle/6qSj84xn6sXAbsfz6"
 							target="blank"
-							className="grow mt-10 bg-tertiary font-bold text-base py-5 text-center"
+							className="grow mt-10 bg-tertiary hover:bg-quaternary ease-in-out duration-100 font-bold text-base py-5 text-center"
 						>
 							Daftar yuk!
 						</a>
