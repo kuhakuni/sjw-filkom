@@ -1,9 +1,11 @@
 import React from "react";
 
 const HeroKonseling = () => {
+	const URL =
+		"https://res.cloudinary.com/kuhakuni/image/upload/v1656081621/sayvge8upssrq0brxbfi.png";
 	const hero = {
 		minHeight: "50vh",
-		background: `url(/assets/img/bg-konseling.png) center center / cover no-repeat`,
+		background: `url(${URL}) center center / cover no-repeat`,
 	};
 	return (
 		<>

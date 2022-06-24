@@ -1,9 +1,11 @@
 import React from "react";
 
 const Hero = () => {
+	const URL =
+		"http://res.cloudinary.com/kuhakuni/image/upload/v1656081912/mdfpxqqt6nqvqqbic8vx.png";
 	const hero = {
 		minHeight: "90vh",
-		background: `url(/assets/img/bg-header.png) center center / cover no-repeat`,
+		background: `url(${URL}) center center / cover no-repeat`,
 	};
 	return (
 		<div className={`flex text-white items-center`} style={hero}>
