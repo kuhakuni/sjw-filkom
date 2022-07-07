@@ -14,7 +14,7 @@ const LayananCard = ({ title, content, button, link }) => {
 					{button && (
 						<Link
 							to={link}
-							className="grow mt-8 py-2 font-semibold bg-opacity-20 bg-white border-2 shadow-layanan"
+							className="grow mt-8 py-2 font-semibold bg-opacity-20 bg-white border-2 hover:shadow-layanan transition-shadow"
 						>
 							{button}
 						</Link>

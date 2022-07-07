@@ -14,8 +14,7 @@ module.exports = withMT({
 				primary: "#31336C",
 				secondary: "#D49A47",
 				tertiary: "#AC424D",
-				quaternary: "#C97D87",
-				dark: "#0f172a",
+				quaternary: "#C25F6A",
 			},
 			container: {
 				center: true,
@@ -27,7 +26,7 @@ module.exports = withMT({
 				},
 			},
 			boxShadow: {
-				layanan: "0px 12px 10px rgba(0, 0, 0, 0.25)",
+				layanan: "0px 8px 10px rgba(0, 0, 0, 0.25)",
 			},
 		},
 	},
