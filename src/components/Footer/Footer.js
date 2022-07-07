@@ -43,13 +43,13 @@ const Footer = () => {
 						></img>
 					</a>
 
-					<a href="/" target="_blank" rel="noopener noreferrer">
+					{/* <a href="/" target="_blank" rel="noopener noreferrer">
 						<img
 							src="/assets/img/telegram.svg"
 							alt="missing telegram img"
 							className="md:pr-12 pr-4"
 						></img>
-					</a>
+					</a> */}
 
 					<a
 						href="https://twitter.com/bemfilkomub"
@@ -96,14 +96,12 @@ const Footer = () => {
 					<h3 className="text-secondary text-3xl font-semibold mb-6 pt-28">
 						Tautan Terkait
 					</h3>
-					<Link to="/">FILKOM UB</Link>
-					<Link to="/">Aryakarsa 2022</Link>
-					<Link to="/">Mozaik Asa 2021</Link>
-					<Link to="/">Elaborasi Makna 2020</Link>
-					<Link to="/">Atmabara 2019</Link>
-					<Link to="/" className="pb-10">
-						Adhikarya 2018
-					</Link>
+					<a href='https://filkom.ub.ac.id/'>FILKOM UB</a>
+                {/* <Link to='/'>Aryakarsa 2022</Link> */}
+                <a href='https://bemfilkom.ub.ac.id/2021/'>Mozaik Asa 2021</a>
+                <a href='https://bemfilkom.ub.ac.id/2020/'>Elaborasi Makna 2020</a>
+                <a href='https://bemfilkom.ub.ac.id/2019/'>Atmabara 2019</a>
+                <a href='https://bemfilkom.ub.ac.id/2018/' className='pb-10'>Adhikarya 2018</a>
 				</div>
 				<hr className="border-solid rounded border-white mx-12" />
 
