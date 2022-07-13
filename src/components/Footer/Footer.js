@@ -95,7 +95,7 @@ const Footer = () => {
 						FILKOM UB
 					</a>
 					<a
-						href="https://bemfilkom.ub.ac.id/2022/"
+						href="https://bemfilkom.ub.ac.id/"
 						target="_blank"
 						rel="noreferrer"
 					>
