@@ -10,17 +10,15 @@ const NavLink = ({ children, to, className }) => {
 		});
 	};
 	return (
-		<li>
-			<NavHash
-				smooth
-				to={`/${to}`}
-				scroll={(el) => scrollToElement(el)}
-				className={className}
-				tabIndex="-1"
-			>
-				{children}
-			</NavHash>
-		</li>
+		<NavHash
+			smooth
+			to={`/${to}`}
+			scroll={(el) => scrollToElement(el)}
+			className={className + " hover:text-tertiary md:px-8"}
+			tabIndex="-1"
+		>
+			{children}
+		</NavHash>
 	);
 };
 
